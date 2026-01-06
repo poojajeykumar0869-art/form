@@ -1,58 +1,53 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Search Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Getform Search Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      text-align: center;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #f2f2f2;
-        }
+    .search-container {
+      max-width: 400px;
+      margin: auto;
+    }
 
-        .box {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            text-align: center;
-            width: 350px;
-        }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
 
-        input[type="search"] {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+    }
 
-        button {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            background: #4567b7;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
 
-<div class="box">
-    <h2>Search</h2>
+  <h2>Search Box Form</h2>
 
-    <!-- GET FORM -->
-    <form action="https://getform.io/f/amdjyxvb" method="GET">
-        <input type="search" name="search_text" placeholder="Type something..." required>
-        <button type="submit">Search</button>
+  <div class="search-container">
+    <form action="https://getform.io/f/amdjyxvb" method="POST">
+      <input type="text" name="search" placeholder="Enter search text" required />
+      <button type="submit">Search</button>
     </form>
-</div>
+  </div>
 
 </body>
 </html>
